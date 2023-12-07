@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pay System</title>
+  <style>
+    .items {
+      display: flex;
+      margin: 50px;
+      justify-content: center;
+    }
+    .book {
+      background-color: rgb(196, 247, 255);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .book-wrapper {
+      padding: 15px;
+    }
+    .name {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 16px;
+      margin-bottom: 10px;;
+    }
+    button {
+      padding: 10px 15px;
+      margin-top: 15px;
+      background-color: rgb(49, 49, 116);
+      color: white;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="items">
+    <div class="book-wrapper">
+      <div class="book" id="book1">
+        <div class="name">Name</div>
+        <div class="price">price</div>
+        <div class="status">status</div>
+        <button id="buy-book1">Buy Book</button>
+      </div>
+    </div>
+    <div class="book-wrapper">
+      <div class="book" id="book2">
+        <div class="name">Name</div>
+        <div class="price">price</div>
+        <div class="status">status</div>
+        <button id="buy-book2">Buy Book</button>
+      </div>
+    </div>
+    <div class="book-wrapper">
+      <div class="book" id="book3">
+        <div class="name">Name</div>
+        <div class="price">price</div>
+        <div class="status">status</div>
+        <button id="buy-book3">Buy Book</button>
+      </div>
+    </div>
+    <div class="book-wrapper">
+      <div class="book" id="book4">
+        <div class="name">Name</div>
+        <div class="price">price</div>
+        <div class="status">status</div>
+        <button id="buy-book4">Buy Book</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="liqpay_checkout"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="module" src="./js/script.js"></script>
+  <script src="//static.liqpay.ua/libjs/checkout.js" async></script>
+</body>
+</html>
